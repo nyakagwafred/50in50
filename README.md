@@ -1,2 +1,2 @@
-## 50in50
-# 50 HTML, CSS and JS Projects 
+# 50in50
+## 50 HTML, CSS and JS mini Projects 
