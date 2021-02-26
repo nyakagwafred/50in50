@@ -58,7 +58,7 @@ const userImage = document.querySelector('.user-image');
 const username = document.querySelector('.username');
 const role = document.querySelector('.role');
 
-let idx = 1;
+let idx = 0;
 
 const updateTestimonials = () => {
 	const { name, position, photo, text } = testimonials[idx];
@@ -70,9 +70,11 @@ const updateTestimonials = () => {
 
 	idx++;
 
-	if (idx === testimonial.length - 1) {
+	if (idx === testimonials.length) {
 		idx = 0;
 	}
+
+	console.log(idx);
 };
 
 setInterval(updateTestimonials, 10000);
