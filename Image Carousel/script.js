@@ -6,7 +6,6 @@ const img = document.querySelectorAll('#imgs img')
 
 let idx = 0
 
-let interval = setInterval(run, 2000)
 
 function run() {
     idx++
@@ -24,20 +23,17 @@ function changeImage() {
     imgs.style.transform = `translate(${-idx * 500}px)`
 }
 
-function resetInterval() {
-    clearInterval(interval)
-    interval = setInterval(run, 2000)
-}
+
 
 rightBtn.addEventListener('click', () => {
-    idx++
+    idx--
     changeImage()
-    resetInterval()
+   
 })
 
 leftBtn.addEventListener('click', () => {
-    idx--
+    idx++
     changeImage()
-    resetInterval()
+    
 })
 
