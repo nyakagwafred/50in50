@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    background-color: sandybrown;
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+}
+
+.container-items {
+    display: flex;
+    justify-content:space-around;
+   
+    
+}
+
+.main {
+ margin:  100px auto;
+}
+.button {
+    margin-top: 20px;
+   display: flex;
+   justify-content: space-around; 
+}
+
+.box {
+    background-color: seagreen;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#red {
+    background-color: silver;
+    
+}
+
+.btn {
+    width: 40%;
+    border: none;
+    background-color: rebeccapurple;
+    color: rgb(250, 244, 244);
+}
+
+.btn:hover {
+    opacity: 0.7;
+    color: #fff;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+button {
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 0px 5px;
+
+}
+
