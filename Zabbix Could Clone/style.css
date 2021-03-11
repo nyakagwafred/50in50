@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color:  rgb(82, 82, 82);
+   
+}
+
+.container {
+    background-color:  rgb(82, 82, 82);
+    color: #fff;
+    
+    margin: 0px;
+}
+
+.main {
+    display: flex;
+    color: white;
+    border-bottom:black solid 5px ;
+}
+
+.sys-info {
+   width: 40%;
+   border-right: black solid 5px;
+}
+
+.problems {
+    text-align: left;
+}
+
+.dashboard {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.up-dashboard {
+    display: flex;  
+    text-align: center;
+}
+
+.up-dashboard div {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 14px;
+    
+}
+
+.down-dashboard div {
+    display: flex;
+    width: 150px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.down-dashboard {
+    display: flex; 
+}
+
+
+h4 {
+    text-align: center;
+    color: #fff;
+}
+
+/* Tables */
+.problem-table {
+    width: 100%;
+}
+
+.problem-table td {
+    border-bottom: 1px dotted red;
+}
+
+#availabe, .availabe {
+    background-color: green;
+}
+.not-available  {
+    background-color: rgb(233, 86, 33);
+}
+#unknown {
+    background-color: rgb(71, 182, 209);
+}
+/*  */
+#disaster, .disaster {
+    background-color: rgb(233, 86, 33);
+}
+#warning, .warning {
+    background-color: rgb(173, 175, 46);
+}
+#information, .information {
+    background-color: rgb(90, 61, 51);
+}
+#high, .high {
+    background-color: rgb(194, 113, 84);
+}
+#average, .average {
+    background-color: rgb(170, 223, 135);
+}
+
+#average, .classiffied {
+    background-color: rgb(202, 128, 16);
+}
+
+/*  */
+.yes {
+   color: rgb(145, 236, 145);
+}
+
+.no {
+   color:red;
+}
+/*  */
+.fa-times {
+    color: red;
+}
+.fa-check {
+    color: rgb(145, 236, 145);
+}
+
+

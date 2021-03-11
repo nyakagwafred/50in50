@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zabbix Clone</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <!--  -->
+      <div class="sys-info">
+        <h4>System Info</h4>
+        <table style="width:100%">
+          <tr>
+            <th class="test" id="test">Parameter</th>
+            <th>Value</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Number of hosts (enable/disabled/templates) ?</td>
+            <td class="no">Check</td>
+            <td><i class="fas fa-times"></i></td>
+          </tr>
+          <tr>
+            <td>Number of items (enable/disabled/supported) ?</td>
+            <td class="yes">Yes</td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Number of triggers (enable/disabled/supported) ?</td>
+            <td class="yes">Yes</td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Number of users(online)</td>
+            <td class="no">35</td>
+            <td><i class="fas fa-times"></i></td>
+          </tr>
+        </table>
+      </div>
+      <!--  -->
+      <div class="dashboard">
+        <div class="up-dashboard">
+          <div class="availabe" id="availabe">Available</div>
+          <div class="not-available" id="not-available">Not available</div>
+          <div class="unknown" id="unknown">Unknown</div>
+          <div class="total" id="total">Total</div>
+        </div>
+        <div class="down-dashboard">
+          <div class="main-disaster" id="main-disaster">Disaster</div>
+          <div class="high" id="main-high">High</div>
+          <div class="average" id="main-average">Average</div>
+          <div class="warning" id="main-warning">Warning</div>
+          <div class="information" id="main-information">Information</div>
+          <div class="classiffied" id="main-classiffied">Not classified</div>
+        </div>
+      </div>
+    </div>
+    <!-- Problem Div and table -->
+    <div class="problems">
+      <h4>Problems</h4>
+      <table class="problem-table">
+        <tr>
+          <th>Time</th>
+          <th>Host</th>
+          <th>Problem/Severity</th>
+          <th>Operational Data</th>
+          <th>Duration</th>
+          <th>Ack</th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td class="time"></td>
+          <td>192.168.1.1</td>
+          <td class="problem-disaster" id="problem-disaster">Disaster</i></td>
+          <td>4d</td>
+          <td>1d 13h 37m</i></td>
+          <td class="no">No</td>
+          <td><i class="fas fa-times"></i></td>
+        </tr>
+        <tr>
+          <td class="time"></td>
+          <td>192.168.1.1</td>
+          <td class="problem-high" id="problem-high">High</i></td>
+          <td>4d</td>
+          <td>1d 13h 37m</i></td>
+          <td class="no">No</td>
+          <td><i class="fas fa-times"></i></td>
+        </tr>
+        <tr>
+          <td class="time"></td>
+          <td>192.168.1.1</td>
+          <td class="problem-warning" id="problem-warning">Warning</i></td>
+          <td>4d</td>
+          <td class="duration disaster">1d 13h 37m</i></td>
+          <td class="no">No</td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+          <td class="time"></td>
+          <td>192.168.1.1</td>
+          <td class="problem-disaster" id="problem-disaster">Disaster</i></td>
+          <td>4d</td>
+          <td>1d 13h 37m</i></td>
+          <td class="no">No</td>
+          <td><i class="fas fa-times"></i></td>
+        </tr>
+        <tr>
+          <td class="time"></td>
+          <td>192.168.1.1</td>
+          <td class="problem-high" id="problem-high">High</i></td>
+          <td>4d</td>
+          <td>1d 13h 37m</i></td>
+          <td class="no">No</td>
+          <td><i class="fas fa-times"></i></td>
+        </tr>
+        <tr>
+          <td class="time"></td>
+          <td>192.168.1.1</td>
+          <td class="problem-warning" id="problem-warning">Warning</i></td>
+          <td>4d</td>
+          <td class="duration disaster">1d 13h 37m</i></td>
+          <td class="no">No</td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+          <td class="time"></td>
+          <td>192.168.1.1</td>
+          <td class="problem-disaster" id="problem-disaster">Disaster</i></td>
+          <td>4d</td>
+          <td>1d 13h 37m</i></td>
+          <td class="no">No</td>
+          <td><i class="fas fa-times"></i></td>
+        </tr>
+        <tr>
+          <td class="time"></td>
+          <td>192.168.1.1</td>
+          <td class="problem-high" id="problem-high">High</i></td>
+          <td>4d</td>
+          <td>1d 13h 37m</i></td>
+          <td class="no">No</td>
+          <td><i class="fas fa-times"></i></td>
+        </tr>
+        <tr>
+          <td class="time"></td>
+          <td>192.168.1.1</td>
+          <td class="problem-warning availabe" id="problem-warning">Resolved</i></td>
+          <td>4d</td>
+          <td class="duration disaster">1d 13h 37m</i></td>
+          <td class="yes">Yes</td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
