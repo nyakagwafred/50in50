@@ -1,21 +1,35 @@
-const addBtn = document.getElementById('add')
-const revertBtn = document.getElementById('revert')
-const redBox = document.getElementById('red')
-const boxes = document.querySelectorAll('#box div')
+//const loader = document.getElementById('loader')
+const text = document.getElementById('text')
+const percentage = document.getElementById('percentage')
+const header = document.getElementById('header')
+let counter = 0
+//let percentage = 0
 
 
+let interval =  setInterval(setWidth, 1000)
 
-addBtn.addEventListener(('click'), () => {
-  redBox.style.background = 'red';
-  redBox.style.width = '80px';
-  redBox.style.height = '80px';
-  
-})
+function setWidth() {
+  document.getElementById('loader').style.width =`${counter}px`
+  percentage.textContent=`${Math.ceil((counter/900) * 100)}%`
+  counter+=30
 
-revertBtn.addEventListener(('click'), () => {
-    redBox.style.background = 'silver';
-    redBox.style.width = '70px';
-    redBox.style.height = '70px';
-})
+  if(counter === 930) {
+    clearInterval(interval)
+    header.innerHTML = 'Done'
+  }
 
-
+  if(counter < 100 ) {
+    text.textContent = 'Initializing...'
+  } else if( counter < 300){
+    text.textContent = 'Loading Files...'
+  }
+  else if( counter < 800){
+    text.textContent = 'Processing...'
+  }
+  else if( counter < 900){
+    text.textContent = 'Finishing'
+  }
+  else if(counter > 900 ) {
+    text.textContent = 'Completed Successfully. '
+  } 
+}
