@@ -35,4 +35,6 @@ const createHeart = (e) => {
     document.querySelector('.loveMe').appendChild(heart)
 
     times.innerHTML = ++timesClicked
+
+    setTimeout(()=> heart.remove(), 1000)
 }
