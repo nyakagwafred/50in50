@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: #34344A;
+}
+
+container {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+}
+.head {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    top: 62.5px;
+    left: 115px;
+    background-color: #C5D3D2;
+}
+
+.face {
+    width: 110px;
+    height: 50px;
+    transform: rotate(-30deg);
+    top: 115px;
+    left: 35px;
+    border-radius: 20% 0% 0% 20% / 50% 0% 0% 50%;
+    background-color: #C5D3D2;
+}
+
+.throat {
+    width: 100px;
+    height: 75px;
+    border-radius: 100%;
+    top: 100px;
+    left: 80px;
+    background-color: #C5D3D2;
+}
+
+.ear {
+    width: 30px;
+    height: 40px;
+    border: 5px solid #34344A;
+    border-bottom-width: 0px;
+    top: 22px;
+    left: 165px;
+    border-top-right-radius: 100%;
+    background-color: #C5D3D2;
+}
+
+.hair {
+    width: 100px;
+    height: 150px;
+    border-radius: 30% 70% 0% 0% / 5% 50% 0% 0%;
+    background-color: transparent;
+    border-top: 20px solid #C5D3D2;
+    border-right: 20px solid #C5D3D2;
+    top: 38px;
+    left: 147px;
+    background-color: #C5D3D2;
+}
+
+.back {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-top: 122.5px solid transparent;
+    border-right: 50px solid #C5D3D2;
+    top: 177.5px;
+    left: 91px;
+    background-color: #C5D3D2;
+}
+
+.base-1 {
+    width: 150px;
+    height: 20px;
+    top: 310px;
+    left: 90px;
+    border-radius: 5% 5% 5% 5% / 50% 50% 50% 50%;
+    background-color: #C5D3D2;
+}
+
+.base-2 {
+    height: 0;
+    width: 150px;
+    top: 338px;
+    left: 75px;
+    background-color: transparent;
+    border-bottom: 20px solid #C5D3D2;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    background-color: #C5D3D2;
+}
+
+.base-3 {
+   width: 180px;
+   height: 20px;
+   top: 365px;
+   left: 75px; 
+   background-color: #C5D3D2;
+}
+
+
