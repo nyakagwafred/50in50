@@ -13,7 +13,7 @@ body {
 }
 
 .fill {
-	background-image: url("https://source.unsplash.com/random/150x150");
+	background-image: url('https://source.unsplash.com/random/150x150');
 	height: 145px;
 	width: 145px;
 	cursor: pointer;
@@ -28,7 +28,11 @@ body {
 }
 
 .hold {
-	border: solid 5px #ccc;
+	border: solid 3px rgb(107, 17, 17);
+}
+
+.bgColor {
+	background-color: black;
 }
 
 .hovered {
